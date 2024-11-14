@@ -30,14 +30,12 @@ body {
 .nav_header {
     margin: 38px 0 30px 0;
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(5, 95px);
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(5, 95px); */
     justify-content: center;
-    gap:10px
+    gap:20px
 }
-/* .nav_header a{
-    padding: 0 10px 0 10px;
-} */
 .main {
     width: 100vw;
     height: 92%;
@@ -64,7 +62,6 @@ body {
     padding: 175px 152px 170px 152px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    
     column-width: 315px;
     gap: 90px;
 }
@@ -315,6 +312,9 @@ body {
 }
 .socials {
     margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20px);
+    gap: 20px;
 }
 .socials a{
     padding-right: 40px;
@@ -336,7 +336,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-.address {
+.address_phone, .address_email {
     margin-top: 30px;
 }
 
